@@ -24,7 +24,7 @@ router.get('/', async (req, res) => {
 // ############################### Get One Category By ID ##############################
 // ############################### Get One Category By ID ##############################
 
-router.get('/:id', (req, res) => {
+router.get('/:id', async (req, res) => {
   // be sure to include its associated Products
   try {
     const categoryData = await Category.findByPk(req.params.id, {
@@ -79,9 +79,23 @@ router.put('/:id', async (req, res) => {
 });
 
 
-// ################################# Delete Product ###############################
-// ################################# Delete Product ###############################
-// ################################# Delete Product ###############################
+// ################################# Create A New category ##############################
+// ################################# Create A New category ##############################
+// ################################# Create A New category ##############################
+
+router.post('/', async (req, res) => {
+  try {
+    const categoryData = await Category.create(req.body);
+    res.status(200).json(categoryData);
+  } catch (err) {
+    res.status(400).json(err);
+  }
+});
+
+
+// ################################# Delete Category ###############################
+// ################################# Delete Category ###############################
+// ################################# Delete Category ###############################
 
 router.delete('/:id', async (req, res) => {
   try {
