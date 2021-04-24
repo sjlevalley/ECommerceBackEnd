@@ -104,14 +104,15 @@ router.post('/', async (req, res) => {
 // ################################# Delete Category ###############################
 
 router.delete('/:id', async (req, res) => {
+  console.log(req.params.id);
   try {
-    const categoryData = await Category.destroy(
-      {
+    const categoryData = await Category.destroy({
       where: {
         id: req.params.id,
+        
       },
     });
-
+    
     if (!categoryData) {
       res.status(404).json({ message: 'No category found with that id!' });
       return;
