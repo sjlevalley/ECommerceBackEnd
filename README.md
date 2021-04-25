@@ -3,7 +3,12 @@
 ![](https://img.shields.io/badge/License-MIT-yellow.svg)
 ## DESCRIPTION
  - This project demonstrates a working E-Commerce API using Express.js, which interacts with a MySQL database to provide a complete back end for the E-Commerce website using the latest technologies.
- -  This project and/or repository can be found at the following url(s) - [GitHub](https://github.com/sjlevalley).
+ -  This project and/or repository can be found at the following url(s): 
+
+ -  [GitHub](https://github.com/sjlevalley)
+ -  [Demonstration Part 1](https://www.loom.com/share20fb5e6b09ae4bfaa3f5bb95c0b45bd2)
+ -  [Demonstration Part 2](https://www.loom.comshare584518ee666849eea03f0a627d2fd835)
+ 
 ## TABLE OF CONTENTS
 * [Description](#description)
 * [Installation](#Installation)
